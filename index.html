@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujal | Video Editor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0d0d0d;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            margin-bottom: 20px;
+            transition: transform 0.4s ease;
+        }
+
+        .hero img:hover {
+            transform: scale(1.05);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        .hero h2 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #bdbdbd;
+            margin-top: 8px;
+        }
+
+        /* Section Style */
+        section {
+            margin-top: 60px;
+            animation: slideUp 1.2s ease;
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffffff;
+            padding-left: 12px;
+        }
+
+        .card {
+            background: #161616;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.05);
+        }
+
+        .card p {
+            color: #cfcfcf;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+            margin-top: 30px;
+        }
+
+        .skill {
+            width: 100%;
+            max-width: 420px;
+            background: #1c1c1c;
+            padding: 18px 20px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .skill:hover {
+            background: #ffffff;
+            color: #000000;
+            transform: scale(1.04);
+        }
+
+        /* Portfolio Button */
+        .portfolio-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .portfolio-btn a {
+            padding: 16px 32px;
+            background: #ffffff;
+            color: #000000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-btn a:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(255,255,255,0.25);
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin: 10px 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            border-bottom: 1px solid transparent;
+            transition: border 0.3s ease, color 0.3s ease;
+        }
+
+        .contact a:hover {
+            border-bottom: 1px solid #ffffff;
+            color: #e0e0e0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+        <!-- Replace profile.png with your photo -->
+        <img src="profile.png" alt="Sujal">
+        <h1>Sujal</h1>
+        <h2>Video Editor & Creative Media Enthusiast</h2>
+    </div>
+
+    <!-- PROFILE -->
+    <section>
+        <h3>Profile</h3>
+        <div class="card">
+            <p>
+                Video Editor with over one year of experience in video editing and basic graphic design. I have worked on independent video projects using professional editing software. I am a fast learner with a creative mindset, strong attention to detail, and good teamwork skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section>
+        <h3>Experience</h3>
+        <div class="card">
+            <p>
+                <strong>Video Editor / Creative Work</strong><br><br>
+                Edited video projects using professional video editing software. Worked in a computer shop managing online sales and product listings on Daraz and HamroBazar, and designed posters for laptops, PCs, and computer accessories. Managed footage, editing, and final outputs independently.
+            </p>
+        </div>
+
+        <div class="card">
+            <p>
+                <strong>Professional Media Work</strong><br><br>
+                Worked with a Nepal Army Lieutenant Colonel on media-related tasks, maintaining professionalism, clear communication, and consistent quality output.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h3>Skills</h3>
+        <div class="skills">
+            <div class="skill">Teamwork & Communication</div>
+            <div class="skill">Video Editing</div>
+            <div class="skill">Videography & Photography</div>
+            <div class="skill">Basic Motion Graphics</div>
+            <div class="skill">Poster & Visual Design</div>
+            <div class="skill">Color Correction</div>
+        </div>
+
+        <div class="portfolio-btn">
+            <a href="https://drive.google.com/drive/folders/1vltQ9AfRQxXllAxC-a8N9h_Ih5GQ2w8J" target="_blank">
+                View My Projects
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div class="contact">
+        <a href="https://www.instagram.com/sujal_fxz" target="_blank">Instagram</a>
+        <a href="mailto:tsujal57@gmail.com">Email</a>
+    </div>
+
+    <footer>
+        © 2026 Sujal | Video Editor Portfolio
+    </footer>
+
+</div>
+
+</body>
+</html>
